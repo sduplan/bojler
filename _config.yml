@@ -1,0 +1,20 @@
+# Custom variables
+sj_docs:
+  source: sj-docs-theme/
+  theme: green
+  facebook_profile_url: https://www.facebook.com/Slicejack/
+  twitter_profile_url: https://twitter.com/Slicejack
+  instagram_profile_url: https://www.instagram.com/slicejack/
+  linkedin_profile_url: https://www.linkedin.com/company-beta/278978/
+  footer_copyright: Copyright &copy; 2017. Slicejack. <br>All rights reserved.
+  footer_logo_url: https://slicejack.com
+
+# Sass settings
+sass:
+  sass_dir: ./sj-docs-theme/_sass
+  style: :compressed
+
+# Theme settings
+layouts_dir: ./sj-docs-theme/_layouts
+includes_dir: ./sj-docs-theme/_includes
+exclude: [ 'sj-docs-theme/index.md', 'sj-docs-theme/LICENSE', 'sj-docs-theme/README.md' ]

@@ -1,0 +1,3 @@
+[submodule "sj-docs-theme"]
+	path = sj-docs-theme
+	url = https://github.com/Slicejack/sj-docs-theme.git
