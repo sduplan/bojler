@@ -70,7 +70,7 @@ Quick features overview:
 This is some kind of development process that you should follow when developing email templates with Bojler. If you are experienced email developer then you can skip this section.
 
 ### Use lite version of boilerplate
-First of all we suggest you to use `email-lite.html` for your email development because you should **avoid using comments** in your final email campaign. Else you may get blocked by SPAM filters.
+First of all we suggest you to use `email-lite.html` or `email-grid-lite.html` for your email development because you should **avoid using comments** in your final email campaign. Else you may get blocked by SPAM filters.
 
 ### Follow [this](https://www.campaignmonitor.com/css/) email CSS guide
 On [this link](https://www.campaignmonitor.com/css/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
@@ -131,6 +131,12 @@ We have tested Bojler on numerous email clients and devices. In table below you 
         </tr>
     </tbody>
 </table>
+
+## Typography
+### System font stack
+Bojler defaults to the system font of a particular operating system. This method can boost performance because the browser or e-mail client doesn't have to download any font files, it's using one it already had.
+
+The beauty of system fonts is that it matches what the current OS uses, so it can be a comfortable look.
 
 ## Grid system
 Bojler uses 12-column grid with a 600px container. <br>On mobile devices (under 600px wide), columns become full width and stack vertically.
