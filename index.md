@@ -2,7 +2,7 @@
 layout:                     default
 
 title:                      bojler
-description:                Bojler is merely a guideline for writing HTML code 
+description:                Bojler is merely a guideline for writing HTML code
                             that will render correctly across each of the most popular email clients.
 keywords:                   boilerplate, grid, email css, email,
                             email boilerplate, email campaigns, email template, bojler, slicejack
@@ -37,15 +37,23 @@ Quick features overview:
     <tbody>
         <tr>
             <td>Reset styles</td>
-            <td>This styles are great starting point for your email template develpment. They fix all well known bugs in various email clients.</td>
+            <td>This styles are great starting point for your email template development. They fix all well known bugs in various email clients.</td>
         </tr>
         <tr>
             <td>Responsive</td>
             <td>This email boilerplate is responsive and ready for mobile devices and tablets.</td>
         </tr>
         <tr>
+            <td>Typography</td>
+            <td>Bojler defaults to the system font of a particular operating system.</td>
+        </tr>
+        <tr>
             <td>Grid</td>
             <td>Bojler uses 12-column grid with a 600px container.</td>
+        </tr>
+        <tr>
+            <td>Components</td>
+            <td>Premade blocks of code ready to use on your custom e-mail template.</td>
         </tr>
         <tr>
             <td>Lite version</td>
@@ -61,7 +69,7 @@ Quick features overview:
         </tr>
         <tr>
             <td>Open source</td>
-            <td>All contents of this boilerplate are licensed under the <a href="https://github.com/Slicejack/slicejack-email-boilerplate/blob/master/LICENSE">MIT license</a>.</td>
+            <td>All contents of this boilerplate are licensed under the <a href="https://github.com/Slicejack/bojler/blob/master/LICENSE">MIT license</a>.</td>
         </tr>
     </tbody>
 </table>
@@ -76,7 +84,7 @@ First of all we suggest you to use `email-lite.html` or `email-grid-lite.html` f
 On [this link](https://www.campaignmonitor.com/css/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
 
 ### Compress and optimize your images
-It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard. 
+It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard.
 
 Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
 
@@ -133,10 +141,18 @@ We have tested Bojler on numerous email clients and devices. In table below you 
 </table>
 
 ## Typography
-### System font stack
 Bojler defaults to the system font of a particular operating system. This method can boost performance because the browser or e-mail client doesn't have to download any font files, it's using one it already had.
 
 The beauty of system fonts is that it matches what the current OS uses, so it can be a comfortable look.
+
+```css
+html,
+body,
+table,
+table td {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+```
 
 ## Grid system
 Bojler uses 12-column grid with a 600px container. <br>On mobile devices (under 600px wide), columns become full width and stack vertically.
@@ -342,4 +358,23 @@ If you need columns without gutter than you should use `.no-gutter` class on you
         </td><!-- /.col -->
     </tr>
 </table><!-- /.container -->
+```
+
+## Components
+Components are premade blocks of code which you can use to build your own email template. These components are optional and other things don't depend on them.
+
+### Preheader
+Preheader is a snippet of copy pulled in from the body of your email and typically displayed underneath the sender name and subject line in a subscriber’s inbox.
+
+It is pulled from the first few lines of text found within an email. Preheader can either be displayed or hidden in the body of your campaign. We decided to hide it.
+
+Preheader is already included to all boilerplate files, if you don't need it just erase it.
+
+**Example:**
+```html
+<table id="preheader">
+    <tr>
+        <td>Your preheader text goes here. This block should be hidden.</td>
+    </tr>
+</table><!-- /#preheader -->
 ```
