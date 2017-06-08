@@ -45,7 +45,7 @@ Quick features overview:
         </tr>
         <tr>
             <td>Typography</td>
-            <td>Bojler defaults to the system font of a particular operating system.</td>
+            <td>Bojler includes simple and easily customized typography for headings, table cells and lists.</td>
         </tr>
         <tr>
             <td>Grid</td>
@@ -141,6 +141,8 @@ We have tested Bojler on numerous email clients and devices. In table below you 
 </table>
 
 ## Typography
+Bojler includes simple and easily customized typography for headings, table cells and lists.
+
 ### System fonts stack
 Bojler defaults to the system font of a particular operating system. This method can boost performance because the browser or e-mail client doesn't have to download any font files, it's using one it already had.
 
@@ -155,7 +157,7 @@ table td {
 }
 ```
 
-### Default values
+### Table cells and headings
 We've updated default typography values for all table cells and headings.
 
 Default values are defined in `px` instead of `em` to work properly in all e-mail clients (Different e-mail clients use different baselines, which makes pixel-perfect work near-impossible when using `em`).
@@ -205,6 +207,27 @@ Default values are defined in `px` instead of `em` to work properly in all e-mai
         </tr>
     </tbody>
 </table>
+
+### Lists
+Lists will not work properly in Outlook 2007/10/13 unless you wrap them with table cell (`td`) that have class `.have-list`.
+
+Outlook 2007/10/13 don't support padding by default on lists so we have to add it manually.
+
+**Example:**
+```html
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="have-list">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+```
 
 ## Grid system
 Bojler uses 12-column grid with a 600px container. <br>On mobile devices (under 640px wide), columns become full width and stack vertically.
@@ -421,7 +444,7 @@ Preheader is already included to all boilerplate files, if you don't need it jus
 
 **Example:**
 ```html
-<table id="preheader">
+<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td>Your preheader text goes here. This block should be hidden.</td>
     </tr>
