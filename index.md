@@ -78,7 +78,7 @@ Quick features overview:
 This is some kind of development process that you should follow when developing email templates with Bojler. If you are experienced email developer then you can skip this section.
 
 ### Use lite version of boilerplate
-First of all we suggest you to use `email-lite.html` or `email-grid-lite.html` for your email development because you should **avoid using comments** in your final email campaign. Else you may get blocked by SPAM filters.
+First of all we suggest you to use `email-lite.html` for your email development because you should **avoid using comments** in your final email campaign. Else you may get blocked by SPAM filters.
 
 ### Follow [this](https://www.campaignmonitor.com/css/) email CSS guide
 On [this link](https://www.campaignmonitor.com/css/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
@@ -95,7 +95,7 @@ Some email clients strip out `<head>` and `<style>` tags from emails, so it's be
 Before you send your HTML email you should test it properly. We recommend you to use [Litmus](http://litmus.com) or [Email on Acid](https://www.emailonacid.com).
 
 ### Send your email properly
-Best way to send your HTML email would be using an Email Service Provider (ESP) such as [MailChimp](http://www.mailchimp.com) or [Campaign Monitor](https://www.campaignmonitor.com/). If you’re just running a quick test we recommend you to use [https://putsmail.com/](https://putsmail.com/)
+Best way to send your HTML email would be using an Email Service Provider (ESP) such as [MailChimp](http://www.mailchimp.com) or [Campaign Monitor](https://www.campaignmonitor.com/). If you’re just running a quick test we recommend you to use [Putsmail](https://putsmail.com/).
 
 ## Compatibility
 We have tested Bojler on numerous email clients and devices. In table below you can see what's supported:
@@ -141,6 +141,7 @@ We have tested Bojler on numerous email clients and devices. In table below you 
 </table>
 
 ## Typography
+### System fonts stack
 Bojler defaults to the system font of a particular operating system. This method can boost performance because the browser or e-mail client doesn't have to download any font files, it's using one it already had.
 
 The beauty of system fonts is that it matches what the current OS uses, so it can be a comfortable look.
@@ -150,21 +151,69 @@ html,
 body,
 table,
 table td {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
 ```
 
-## Grid system
-Bojler uses 12-column grid with a 600px container. <br>On mobile devices (under 600px wide), columns become full width and stack vertically.
+### Default values
+We've updated default typography values for all table cells and headings.
 
-### Use grid version of boilerplate
-We have created special `email-grid.html` file for email development with our grid. Basically it's a `email-lite.html` combined with grid CSS.
+Default values are defined in `px` instead of `em` to work properly in all e-mail clients (Different e-mail clients use different baselines, which makes pixel-perfect work near-impossible when using `em`).
+<table>
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Font size</th>
+            <th>Line height</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Base <em>(Table cells)</em></td>
+            <td>16px</td>
+            <td>23px</td>
+        </tr>
+        <tr>
+            <td>Heading 1</td>
+            <td>50px</td>
+            <td>58px</td>
+        </tr>
+        <tr>
+            <td>Heading 2</td>
+            <td>38px</td>
+            <td>46px</td>
+        </tr>
+        <tr>
+            <td>Heading 3</td>
+            <td>28px</td>
+            <td>36px</td>
+        </tr>
+        <tr>
+            <td>Heading 4</td>
+            <td>21px</td>
+            <td>29px</td>
+        </tr>
+        <tr>
+            <td>Heading 5</td>
+            <td>16px</td>
+            <td>23px</td>
+        </tr>
+        <tr>
+            <td>Heading 6</td>
+            <td>12px</td>
+            <td>20px</td>
+        </tr>
+    </tbody>
+</table>
+
+## Grid system
+Bojler uses 12-column grid with a 600px container. <br>On mobile devices (under 640px wide), columns become full width and stack vertically.
 
 ### Media queries
 We suggest you to use this media query when building responsive email with our grid.
 
 ```css
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 640px) {}
 ```
 
 ### Grid options
@@ -173,8 +222,8 @@ See how aspects of this grid work across devices with a handy table.
     <thead>
         <tr>
             <th></th>
-            <th>Small devices (&lt;600px)</th>
-            <th>Large devices (&gt;600px)</th>
+            <th>Small devices (&lt;640px)</th>
+            <th>Large devices (&gt;640px)</th>
         </tr>
     </thead>
     <tbody>
