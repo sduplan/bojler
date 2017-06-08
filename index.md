@@ -450,3 +450,26 @@ Preheader is already included to all boilerplate files, if you don't need it jus
     </tr>
 </table><!-- /#preheader -->
 ```
+
+### Buttons
+We have implemented bulletproof buttons that work properly on all e-mail clients.
+
+**Example:**
+```html
+<table class="btn" width="0" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <a href="#">Click me!</a>
+        </td>
+    </tr>
+</table><!-- /.btn -->
+```
+
+We've prepared few button variations for you. To apply the variation just add one of the following classes next to your `btn` class:
+
+- Full width: `btn--full-width`
+- Rounded: `btn--rounded`
+- Green: `btn--green`
+- Red: `btn--red`
+- Blue: `btn--blue`
+- Dark: `btn--dark`
