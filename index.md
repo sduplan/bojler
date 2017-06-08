@@ -213,7 +213,9 @@ Lists will not work properly in Outlook 2007/10/13 unless you wrap them with tab
 
 Outlook 2007/10/13 don't support padding by default on lists so we have to add it manually.
 
-**Example:**
+<div class="example">
+    <a href="/examples/example-lists.html" target="blank">Preview</a>
+</div>
 ```html
 <table border="0" cellpadding="0" cellspacing="0">
     <tr>
@@ -279,11 +281,13 @@ See how aspects of this grid work across devices with a handy table.
 ### Container
 All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center.
 
-**Example:**
+<div class="example">
+    <a href="/examples/example-grid-container.html" target="blank">Preview</a>
+</div>
 ```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
-        <td></td>
+        <td>Content goes here ...</td>
     </tr>
 </table><!-- /.container -->
 ```
@@ -293,14 +297,16 @@ Content should be placed within columns, and columns should be placed as `<td>` 
 You can define width of the column with classes such as `.column-1`, `.column-2`, `.column-3` etc.
 In `.container` you can place max. 12 columns.
 
-**Examples:**
+<div class="example">
+    <a href="/examples/example-grid-columns.html" target="blank">Preview</a>
+</div>
 ```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td class="column-12 first last">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -308,13 +314,16 @@ In `.container` you can place max. 12 columns.
 </table><!-- /.container -->
 ```
 
+<div class="example">
+    <a href="/examples/example-grid-columns-2.html" target="blank">Preview</a>
+</div>
 ```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td class="column-6 first">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -322,7 +331,7 @@ In `.container` you can place max. 12 columns.
         <td class="column-6 last">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -330,13 +339,16 @@ In `.container` you can place max. 12 columns.
 </table><!-- /.container -->
 ```
 
+<div class="example">
+    <a href="/examples/example-grid-columns-3.html" target="blank">Preview</a>
+</div>
 ```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td class="column-3 first">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -344,7 +356,7 @@ In `.container` you can place max. 12 columns.
         <td class="column-3">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -352,7 +364,7 @@ In `.container` you can place max. 12 columns.
         <td class="column-3">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -360,7 +372,7 @@ In `.container` you can place max. 12 columns.
         <td class="column-3 last">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -374,14 +386,16 @@ The `.first` class adds the appropriate amount of padding-left to space the cont
 
 The reason these classes exist is that CSS properties like `:last-child` don’t work in most email clients so a class is needed.
 
-**Example:**
+<div class="example">
+    <a href="/examples/example-grid-first-and-last.html" target="blank">Preview</a>
+</div>
 ```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td class="column-4 first">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -389,7 +403,7 @@ The reason these classes exist is that CSS properties like `:last-child` don’t
         <td class="column-4">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -397,7 +411,7 @@ The reason these classes exist is that CSS properties like `:last-child` don’t
         <td class="column-4 last">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -409,14 +423,16 @@ The reason these classes exist is that CSS properties like `:last-child` don’t
 
 If you need columns without gutter than you should use `.no-gutter` class on your `.container`.
 
-**Example:**
+<div class="example">
+    <a href="/examples/example-grid-no-gutter.html" target="blank">Preview</a>
+</div>
 ```html
-<table class="container no-gutter" border="0" cellpadding="0" cellspacing="0">
+<table class="container no-gutter" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td class="column-6">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -424,7 +440,7 @@ If you need columns without gutter than you should use `.no-gutter` class on you
         <td class="column-6">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>Content goes here</td>
+                    <td>Content goes here ...</td>
                 </tr>
             </table>
         </td><!-- /.col -->
@@ -442,7 +458,6 @@ It is pulled from the first few lines of text found within an email. Preheader c
 
 Preheader is already included to all boilerplate files, if you don't need it just erase it.
 
-**Example:**
 ```html
 <table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0">
     <tr>
@@ -454,9 +469,11 @@ Preheader is already included to all boilerplate files, if you don't need it jus
 ### Buttons
 We have implemented bulletproof buttons that work properly on all e-mail clients.
 
-**Example:**
+<div class="example">
+    <a href="/examples/example-buttons.html" target="blank">Preview</a>
+</div>
 ```html
-<table class="btn" width="0" border="0" cellpadding="0" cellspacing="0">
+<table class="btn" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td>
             <a href="#">Click me!</a>
