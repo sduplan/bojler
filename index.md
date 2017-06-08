@@ -164,7 +164,7 @@ Default values are defined in `px` instead of `em` to work properly in all e-mai
 <table>
     <thead>
         <tr>
-            <th>Property</th>
+            <th>Element</th>
             <th>Font size</th>
             <th>Line height</th>
         </tr>
