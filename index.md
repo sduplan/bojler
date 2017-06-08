@@ -214,7 +214,7 @@ Lists will not work properly in Outlook 2007/10/13 unless you wrap them with tab
 Outlook 2007/10/13 don't support padding by default on lists so we have to add it manually.
 
 <div class="example">
-    <a href="/examples/example-lists.html" target="blank">Preview</a>
+    <a href="examples/example-lists.html" target="blank">Preview</a>
 </div>
 ```html
 <table border="0" cellpadding="0" cellspacing="0">
@@ -282,7 +282,7 @@ See how aspects of this grid work across devices with a handy table.
 All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center.
 
 <div class="example">
-    <a href="/examples/example-grid-container.html" target="blank">Preview</a>
+    <a href="examples/example-grid-container.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -298,7 +298,7 @@ You can define width of the column with classes such as `.column-1`, `.column-2`
 In `.container` you can place max. 12 columns.
 
 <div class="example">
-    <a href="/examples/example-grid-columns.html" target="blank">Preview</a>
+    <a href="examples/example-grid-columns.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -315,7 +315,7 @@ In `.container` you can place max. 12 columns.
 ```
 
 <div class="example">
-    <a href="/examples/example-grid-columns-2.html" target="blank">Preview</a>
+    <a href="examples/example-grid-columns-2.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -340,7 +340,7 @@ In `.container` you can place max. 12 columns.
 ```
 
 <div class="example">
-    <a href="/examples/example-grid-columns-3.html" target="blank">Preview</a>
+    <a href="examples/example-grid-columns-3.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -387,7 +387,7 @@ The `.first` class adds the appropriate amount of padding-left to space the cont
 The reason these classes exist is that CSS properties like `:last-child` don’t work in most email clients so a class is needed.
 
 <div class="example">
-    <a href="/examples/example-grid-first-and-last.html" target="blank">Preview</a>
+    <a href="examples/example-grid-first-and-last.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -424,7 +424,7 @@ The reason these classes exist is that CSS properties like `:last-child` don’t
 If you need columns without gutter than you should use `.no-gutter` class on your `.container`.
 
 <div class="example">
-    <a href="/examples/example-grid-no-gutter.html" target="blank">Preview</a>
+    <a href="examples/example-grid-no-gutter.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container no-gutter" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -470,7 +470,7 @@ Preheader is already included to all boilerplate files, if you don't need it jus
 We have implemented bulletproof buttons that work properly on all e-mail clients.
 
 <div class="example">
-    <a href="/examples/example-buttons.html" target="blank">Preview</a>
+    <a href="examples/example-buttons.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="btn" border="0" cellpadding="0" cellspacing="0">
