@@ -512,7 +512,7 @@ Everything regarding CSS and reset for this component is already implemented ins
             <v:fill type="frame" src="https://dummyimage.com/600x350/d9f0ff/cccccc.jpg" color="#ffffff" />
             <v:textbox inset="0, 0, 0, 0">
             <![endif]-->
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <table class="hero__inner" width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td class="align-center">
                         <h1>Title</h1>
@@ -521,7 +521,18 @@ Everything regarding CSS and reset for this component is already implemented ins
                 <tr>
                     <td class="align-center">Content goes here ...</td>
                 </tr>
-            </table>
+                <tr>
+                    <td>
+                        <table class="btn btn--blue" border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                                <td>
+                                    <a href="#">Click me!</a>
+                                </td>
+                            </tr>
+                        </table><!-- /.btn -->
+                    </td>
+                </tr>
+            </table><!-- /.hero__inner -->
             <!--[if gte mso 9]>
             </v:textbox>
             </v:rect>
