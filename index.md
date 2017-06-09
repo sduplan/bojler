@@ -494,8 +494,12 @@ We've prepared few button variations for you. To apply the variation just add on
 ### Hero
 Hero is component with background image and content inside it. With this component we're trying to recreate widely popular hero sections seen all around web.
 
-Everything regarding CSS and reset for this component is already implemented inside our `email.html` and `email-lite.html` except markup. You can copy markup from example below:
+Everything regarding CSS and reset for this component is already implemented inside our `email.html` and `email-lite.html` except markup. You can copy markup from example below.
 
+<div class="callout callout--info">
+    <p><strong>Define width and height!</strong> You have to define width and height on hero element, otherwise your hero component will be broken on some Outlook e-mail clients!</p>
+    <p>Furthermore, your background image should have the same dimensions as your hero component, otherwise it will be broken on some Outlook e-mail clients.</p>
+</div>
 <div class="example">
     <a href="examples/example-hero.html" target="blank">Preview</a>
 </div>
