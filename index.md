@@ -490,3 +490,39 @@ We've prepared few button variations for you. To apply the variation just add on
 - Red: `btn--red`
 - Blue: `btn--blue`
 - Dark: `btn--dark`
+
+### Hero
+Hero is component with background image and content inside it. With this component we're trying to recreate widely popular hero sections seen all around web.
+
+Everything regarding CSS and reset for this component is already implemented inside our `email.html` and `email-lite.html` except markup. You can copy markup from example below:
+
+<div class="example">
+    <a href="examples/example-hero.html" target="blank">Preview</a>
+</div>
+```html
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="hero" width="600" height="350" background="https://dummyimage.com/600x350/d9f0ff/cccccc.jpg">
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; height: 350px;">
+            <v:fill type="frame" src="https://dummyimage.com/600x350/d9f0ff/cccccc.jpg" color="#ffffff" />
+            <v:textbox inset="0, 0, 0, 0">
+            <![endif]-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="align-center">
+                        <h1>Title</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-center">Content goes here ...</td>
+                </tr>
+            </table>
+            <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+        </td><!-- /.hero -->
+    </tr>
+</table><!-- /.container -->
+```
