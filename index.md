@@ -52,6 +52,10 @@ Quick features overview:
             <td>Bojler uses 12-column grid with a 600px container.</td>
         </tr>
         <tr>
+            <td>Utilities</td>
+            <td>High-specificity, very explicit selectors, helper classes.</td>
+        </tr>
+        <tr>
             <td>Components</td>
             <td>Premade blocks of code ready to use on your custom e-mail template.</td>
         </tr>
@@ -448,6 +452,87 @@ If you need columns without gutter than you should use `.no-gutter` class on you
 </table><!-- /.container -->
 ```
 
+## Utility classes
+High-specificity, very explicit selectors, helper classes.
+
+### Table related
+Classes used for manipulating with `<table>` element:
+- Full width: `.table-full-width`
+
+<div class="callout callout--info">
+    <p><strong>Always define width attribute next to table-full-width class!</strong> It is always good to define width next to table-full-width class, Outlook loves width attributes 😄</p>
+</div>
+<div class="example">
+    <a href="examples/example-utility-tables.html" target="blank">Preview</a>
+</div>
+```html
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="column-12 first last">
+            <table class="table-full-width" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>This table cell is full width!</td>
+                </tr>
+            </table>
+        </td><!-- /.col -->
+    </tr>
+</table><!-- /.container -->
+```
+
+### Alignment
+Easily realign text to components with text alignment classes:
+- Left: `.align-left`
+- Right: `.align-center`
+- Center: `.align-right`
+
+<div class="example">
+    <a href="examples/example-utility-alignment.html" target="blank">Preview</a>
+</div>
+```html
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="column-12 first last">
+            <table class="table-full-width" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="align-left">Align left</td>
+                </tr>
+                <tr>
+                    <td class="align-center">Align center</td>
+                </tr>
+                <tr>
+                    <td class="align-right">Align right</td>
+                </tr>
+            </table>
+        </td><!-- /.col -->
+    </tr>
+</table><!-- /.container -->
+```
+
+### Spacing
+Add spacing to your table cells easily:
+- Top: `.spacing-top`
+- Bottom: `.spacing-bottom`
+
+<div class="example">
+    <a href="examples/example-utility-spacing.html" target="blank">Preview</a>
+</div>
+```html
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="column-12 first last">
+            <table class="table-full-width" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="spacing-top spacing-bottom">This table cell have spacing top and bottom.</td>
+                </tr>
+                <tr>
+                    <td class="spacing-top spacing-bottom">This table cell have spacing top and bottom.</td>
+                </tr>
+            </table>
+        </td><!-- /.col -->
+    </tr>
+</table><!-- /.container -->
+```
+
 ## Components
 Components are premade blocks of code which you can use to build your own email template. These components are optional and other things don't depend on them.
 
@@ -456,8 +541,9 @@ Preheader is a snippet of copy pulled in from the body of your email and typical
 
 It is pulled from the first few lines of text found within an email. Preheader can either be displayed or hidden in the body of your campaign. We decided to hide it.
 
-Preheader is already included to all boilerplate files, if you don't need it just erase it.
-
+<div class="callout callout--info">
+    <p><strong>Remove it if you don't need it.</strong> Preheader is already included to all boilerplate files, if you don't need it just erase it.</p>
+</div>
 ```html
 <table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0">
     <tr>
@@ -468,6 +554,15 @@ Preheader is already included to all boilerplate files, if you don't need it jus
 
 ### Buttons
 We have implemented bulletproof buttons that work properly on all e-mail clients.
+
+We've prepared few button variations for you. To apply the variation just add one of the following classes next to your `btn` class:
+
+- Full width: `btn--full-width`
+- Rounded: `btn--rounded`
+- Green: `btn--green`
+- Red: `btn--red`
+- Blue: `btn--blue`
+- Dark: `btn--dark`
 
 <div class="example">
     <a href="examples/example-buttons.html" target="blank">Preview</a>
@@ -480,16 +575,15 @@ We have implemented bulletproof buttons that work properly on all e-mail clients
         </td>
     </tr>
 </table><!-- /.btn -->
+
+<table class="btn btn--red" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <a href="#">Click me!</a>
+        </td>
+    </tr>
+</table><!-- /.btn -->
 ```
-
-We've prepared few button variations for you. To apply the variation just add one of the following classes next to your `btn` class:
-
-- Full width: `btn--full-width`
-- Rounded: `btn--rounded`
-- Green: `btn--green`
-- Red: `btn--red`
-- Blue: `btn--blue`
-- Dark: `btn--dark`
 
 ### Hero
 Hero is component with background image and content inside it. With this component we're trying to recreate widely popular hero sections seen all around web.
