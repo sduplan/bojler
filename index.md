@@ -2,7 +2,7 @@
 layout:                     default
 
 title:                      bojler
-description:                Bojler is boilerplate and guideline for writing HTML code
+description:                Bojler is email boilerplate and guideline for writing HTML code
                             that will render correctly across each of the most popular email clients.
 keywords:                   boilerplate, grid, email css, email,
                             email boilerplate, email campaigns, email template, bojler, slicejack
@@ -18,7 +18,7 @@ github_button_url:          https://github.com/Slicejack/bojler
 ---
 
 ## Introduction
-Bojler is boilerplate and guideline for writing HTML code that will render correctly across each of the most popular email clients.
+Bojler is email boilerplate and guideline for writing HTML code that will render correctly across each of the most popular email clients.
 
 If you have experienced email template development then you know how painful it is to build perfect email template that works on all email clients.
 
@@ -57,7 +57,7 @@ Quick features overview:
         </tr>
         <tr>
             <td>Components</td>
-            <td>Premade blocks of code ready to use on your custom e-mail template.</td>
+            <td>Premade blocks of code ready to use on your custom email template.</td>
         </tr>
         <tr>
             <td>Lite version</td>
@@ -148,7 +148,7 @@ We have tested Bojler on numerous email clients and devices. In table below you 
 Bojler includes simple and easily customized typography for headings, table cells and lists.
 
 ### System fonts stack
-Bojler defaults to the system font of a particular operating system. This method can boost performance because the browser or e-mail client doesn't have to download any font files, it's using one it already had.
+Bojler defaults to the system font of a particular operating system. This method can boost performance because the browser or email client doesn't have to download any font files, it's using one it already had.
 
 The beauty of system fonts is that it matches what the current OS uses, so it can be a comfortable look.
 
@@ -164,7 +164,7 @@ table td {
 ### Table cells and headings
 We've updated default typography values for all table cells and headings.
 
-Default values are defined in `px` instead of `em` to work properly in all e-mail clients (Different e-mail clients use different baselines, which makes pixel-perfect work near-impossible when using `em`).
+Default values are defined in `px` instead of `em` to work properly in all email clients (Different email clients use different baselines, which makes pixel-perfect work near-impossible when using `em`).
 <table>
     <thead>
         <tr>
@@ -553,7 +553,7 @@ It is pulled from the first few lines of text found within an email. Preheader c
 ```
 
 ### Buttons
-We have implemented bulletproof buttons that work properly on all e-mail clients.
+We have implemented bulletproof buttons that work properly on all email clients.
 
 We've prepared few button variations for you. To apply the variation just add one of the following classes next to your `btn` class:
 
@@ -591,8 +591,8 @@ Hero is component with background image and content inside it. With this compone
 Everything regarding CSS and reset for this component is already implemented inside our `email.html` and `email-lite.html` except markup. You can copy markup from example below.
 
 <div class="callout callout--info">
-    <p><strong>Define width and height!</strong> You have to define width and height on hero element, otherwise your hero component will be broken on some Outlook e-mail clients!</p>
-    <p>Furthermore, your background image should have the same dimensions as your hero component, otherwise it will be broken on some Outlook e-mail clients.</p>
+    <p><strong>Define width and height!</strong> You have to define width and height on hero element, otherwise your hero component will be broken on some Outlook email clients!</p>
+    <p>Furthermore, your background image should have the same dimensions as your hero component, otherwise it will be broken on some Outlook email clients.</p>
 </div>
 <div class="example">
     <a href="examples/example-hero.html" target="blank">Preview</a>
