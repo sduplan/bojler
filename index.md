@@ -535,6 +535,10 @@ Add spacing to your table cells easily:
 
 ## Components
 Components are premade blocks of code which you can use to build your own email template. These components are optional and other things don't depend on them.
+<div class="callout callout--info">
+    <p><strong>We use <a href="https://en.bem.info/methodology">BEM</a> for components.</strong> The Block, Element, Modifier methodology (commonly referred to as <a href="https://en.bem.info/methodology">BEM</a>) is a popular naming convention for classes in HTML and CSS. Its goal is to help developers better understand the relationship between the HTML and CSS in a given project.</p>
+    <p>We strongly recommend you to <a href="https://css-tricks.com/bem-101">read more about BEM here</a>. Also, we recommend you to use it for new/custom components.</p>
+</div>
 
 ### Preheader
 Preheader is a snippet of copy pulled in from the body of your email and typically displayed underneath the sender name and subject line in a subscriber’s inbox.
