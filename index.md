@@ -2,7 +2,7 @@
 layout:                     default
 
 title:                      bojler
-description:                Bojler is email boilerplate and guideline for writing HTML code
+description:                Bojler is an email boilerplate and a guideline for writing HTML code
                             that will render correctly across each of the most popular email clients.
 keywords:                   boilerplate, grid, email css, email,
                             email boilerplate, email campaigns, email template, bojler, slicejack
@@ -18,9 +18,9 @@ github_button_url:          https://github.com/Slicejack/bojler
 ---
 
 ## Introduction
-Bojler is email boilerplate and guideline for writing HTML code that will render correctly across each of the most popular email clients.
+Bojler is an email boilerplate and a guideline for writing HTML code that will render correctly across each of the most popular email clients.
 
-If you have experienced email template development then you know how painful it is to build perfect email template that works on all email clients.
+If you have experience with email template development, you know how painful it is to build a perfect email template that works across all email clients.
 
 To make it easier for you to develop responsive and lightweight email templates we have created Bojler.
 
