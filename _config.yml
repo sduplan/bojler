@@ -1,7 +1,7 @@
 # Custom variables
 sj_docs:
   source: sj-docs-theme/
-  theme: green
+  theme:
   facebook_profile_url: https://www.facebook.com/Slicejack/
   twitter_profile_url: https://twitter.com/Slicejack
   instagram_profile_url: https://www.instagram.com/slicejack/
