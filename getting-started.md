@@ -120,9 +120,9 @@ We suggest you to use this media query when building responsive emails:
 ```
 
 ### Typography
-Bojler includes simple and easily customized typography for <a href="/typography#table-cells-and-headings">headings</a>, <a href="/typography#table-cells-and-headings">table cells</a> and <a href="/typography#lists">lists</a>.
+Bojler includes simple and easily customized typography for <a href="typography#table-cells-and-headings">headings</a>, <a href="typography#table-cells-and-headings">table cells</a> and <a href="typography#lists">lists</a>.
 
-To read more about [Typography](/typography) please go to it's own [section here](/typography).
+To read more about [Typography](typography) please go to it's own [section here](typography).
 
 ### Grid system
 Bojler uses 12-column grid with a 600px container.
