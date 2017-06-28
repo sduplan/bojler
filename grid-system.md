@@ -14,13 +14,6 @@ page_nav_next_content:      Utility classes
 page_nav_next_url:          /utility-classes
 ---
 
-## Media queries
-We suggest you to use this media query when building responsive email with our grid.
-
-```css
-@media screen and (max-width: 640px) {}
-```
-
 ## Grid options
 See how aspects of this grid work across devices with a handy table.
 <table>

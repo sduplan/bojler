@@ -40,7 +40,7 @@ grid_nav_item_4_url:        /utility-classes
 
 grid_nav_item_5:            true
 grid_nav_item_5_title:      Components
-grid_nav_item_5_content:    Components are premade blocks of code which you can use to build your own email template. These components are optional and other things don’t depend on them.
+grid_nav_item_5_content:    Components are pre-made blocks of code which you can use to build your own email template. These components are optional and other things don’t depend on them.
 grid_nav_item_5_cta:        Learn more
 grid_nav_item_5_url:        /components
 
