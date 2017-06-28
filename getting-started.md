@@ -97,7 +97,7 @@ Bojler automatically inline your newly compiled CSS to your `.html` files. All y
 </div>
 
 ### Webserver with Live Reload
-When you [run development mode](/getting-started#3-run-the-bojler-) Bojler starts webserver with Live Reload.
+When you [run development mode](getting-started#3-run-the-bojler-) Bojler starts webserver with Live Reload.
 
 Now you don't have to refresh your browser every time you make and save changes in your `.html` and `.scss`files, Bojler will do it for you.
 
@@ -128,17 +128,17 @@ To read more about [Typography](typography) please go to it's own [section here]
 Bojler uses 12-column grid with a 600px container.
 On mobile devices (under 640px wide), columns become full width and stack vertically.
 
-To read more about [Grid system](/grid-system) please go to it's own [section here](/grid-system).
+To read more about [Grid system](grid-system) please go to it's own [section here](grid-system).
 
 ### Utility classes
-High-specificity, very explicit selectors and helper classes. We use them to easily manipulate with things such as [tables](/utility-classes#table-related), [alignment](/utility-classes#alignment) and [spacing](/utility-classes#spacing).
+High-specificity, very explicit selectors and helper classes. We use them to easily manipulate with things such as [tables](utility-classes#table-related), [alignment](utility-classes#alignment) and [spacing](utility-classes#spacing).
 
-To read more about [Utility classes](/utility-classes) please go to their own [section here](/utility-classes).
+To read more about [Utility classes](utility-classes) please go to their own [section here](utility-classes).
 
 ### Components
 Components are pre-made blocks of code which you can use to build your own email template. These components are optional and other things don’t depend on them.
 
-To read more about [Components](/components) please go to their own [section here](/components).
+To read more about [Components](components) please go to their own [section here](components).
 
 ## Directory structure
 Everything you want to know about directory structure can be found here:
