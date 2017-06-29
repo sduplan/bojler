@@ -84,7 +84,7 @@ Write <a href="http://sass-lang.com" target="blank">SASS</a> and Bojler will com
 Make sure you have main `style.scss` file inside your `/source/sass` directory, otherwise Bojler will not be able to compile SASS to CSS.
 
 <div class="callout callout--info">
-    <p><strong>Use existing <a href="/getting-started#directory-structure">directory structure</a>.</strong> We recommend you to use existing <a href="/getting-started#directory-structure">directory structure</a>. Best way to add new SASS/CSS is to import new files (partials) to style.scss file.</p>
+    <p><strong>Use existing <a href="http://slicejack.github.io/bojler/getting-started#directory-structure">directory structure</a>.</strong> We recommend you to use existing <a href="http://slicejack.github.io/bojler/getting-started#directory-structure">directory structure</a>. Best way to add new SASS/CSS is to import new files (partials) to style.scss file.</p>
 </div>
 
 ### Automatic CSS inlining
@@ -97,7 +97,7 @@ Bojler automatically inline your newly compiled CSS to your `.html` files. All y
 </div>
 
 ### Webserver with Live Reload
-When you [run development mode](getting-started#3-run-the-bojler-) Bojler starts webserver with Live Reload.
+When you [run development mode](getting-started#run-the-bojler-) Bojler starts webserver with Live Reload.
 
 Now you don't have to refresh your browser every time you make and save changes in your `.html` and `.scss`files, Bojler will do it for you.
 
