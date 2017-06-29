@@ -211,6 +211,13 @@ We have tested Bojler on numerous email clients and devices. In table below you 
 ### Follow [this](https://www.campaignmonitor.com/css/) email CSS guide
 On [this link](https://www.campaignmonitor.com/css/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
 
+### DPI Scaling in Outlook 2007-2013
+If you need to solve issues with DPI Scaling in Outlook 2007-2013 please refer to [this thread](https://litmus.com/community/discussions/151-mystery-solved-dpi-scaling-in-outlook-2007-2013) and [this article](https://blog.jmwhite.co.uk/2014/03/28/solving-dpi-scaling-issues-with-html-email-in-outlook/).
+
+<div class="callout callout--info">
+    <p><strong>Support for VML and images is already implemented.</strong> We've already implemented solution to make VML and images scale properly, as you can see <a href="https://github.com/Slicejack/bojler/blob/master/source/email.html" target="blank">here</a>.</p>
+</div>
+
 ### Compress and optimize your images
 It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard.
 
