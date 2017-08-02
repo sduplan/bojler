@@ -1,17 +1,24 @@
 ---
-layout:                     default
+# Page settings
+layout: default
+keywords: email, css, html, framework, boilerplate, grid, campaigns, templates, bojler, slicejack
+comments: false
 
-title:                      Grid system
-description:                Bojler uses 12-column grid with a 600px container. <br>On mobile devices (under 640px wide), columns become full width and stack vertically.
-keywords:                   boilerplate, grid, email css, email, email boilerplate, email campaigns, email template, bojler, slicejack
+# Hero section
+title: Grid system
+description: Bojler uses 12-column grid with a 600px container. <br>On mobile devices (under 640px wide), columns become full width and stack vertically.
 
-page_nav:                   true
-page_nav_prev:              true
-page_nav_prev_content:      Typography
-page_nav_prev_url:          /typography
-page_nav_next:              true
-page_nav_next_content:      Utility classes
-page_nav_next_url:          /utility-classes
+# Micro navigation
+micro_nav: true
+
+# Page navigation
+page_nav:
+    prev:
+        content: Typography
+        url: /typography
+    next:
+        content: Utility classes
+        url: /utility-classes
 ---
 
 ## Grid options

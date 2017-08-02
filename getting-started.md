@@ -1,21 +1,25 @@
 ---
-layout:                     default
+# Page settings
+layout: default
+keywords: email, css, html, framework, boilerplate, grid, campaigns, templates, bojler, slicejack
+comments: false
 
-title:                      Getting started
-description:                In this section you'll find features and support table, basic information about Bojler and how to use it properly. If you're first time user then you should read this first.
-keywords:                   boilerplate, grid, email css, email, email boilerplate, email campaigns, email template, bojler, slicejack
+# Hero section
+title: Getting started
+description: In this section you'll find features and support table, basic information about Bojler and how to use it properly. If you're first time user then you should read this first.
 
-page_nav:                   true
-page_nav_prev:              false
-page_nav_prev_content:
-page_nav_prev_url:
-page_nav_next:              true
-page_nav_next_content:      Typography
-page_nav_next_url:          /typography
+# Micro navigation
+micro_nav: true
+
+# Page navigation
+page_nav:
+    next:
+        content: Typography
+        url: /typography
 ---
 
 ## Introduction
-Bojler is an email boilerplate and a guideline for writing HTML code that will render correctly across each of the most popular email clients.
+Bojler is an email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.
 
 If you have experience with email template development, you know how painful it is to build a perfect email template that works across all email clients.
 
@@ -81,20 +85,25 @@ This is a list of all the features we've implemented to Bojler. Few of them have
 ### SASS support 🎉
 Write <a href="http://sass-lang.com" target="blank">SASS</a> and Bojler will compile it to CSS. You can write your SASS inside `/source/sass` directory.
 
-Make sure you have main `style.scss` file inside your `/source/sass` directory, otherwise Bojler will not be able to compile SASS to CSS.
+Make sure you have `inlined.scss` and `embedded.scss` files inside your `/source/sass` directory, otherwise Bojler will not be able to compile SASS to CSS.
 
 <div class="callout callout--info">
-    <p><strong>Use existing <a href="http://slicejack.github.io/bojler/getting-started#directory-structure">directory structure</a>.</strong> We recommend you to use existing <a href="http://slicejack.github.io/bojler/getting-started#directory-structure">directory structure</a>. Best way to add new SASS/CSS is to import new files (partials) to style.scss file.</p>
+    <p><strong>Use existing <a href="/getting-started#directory-structure">directory structure</a>.</strong> We recommend you to use existing <a href="/getting-started#directory-structure">directory structure</a>. Best way to add new SASS/CSS is to import new files (partials) to <code>inlined.scss</code> and <code>embedded.scss</code> files.</p>
 </div>
 
 ### Automatic CSS inlining
 Some email clients strip out `<head>` and `<style>` tags from emails, so it’s best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so we automated it!
 
-Bojler automatically inline your newly compiled CSS to your `.html` files. All you have to do is write your SASS/CSS and Bojler will take care of everything else.
+Bojler automatically inline your newly compiled CSS to your `.html` files. All you have to do is write your SASS/CSS inside `inlined.scss` and Bojler will take care of everything else.
 
 <div class="callout callout--info">
-    <p><strong>What about media queries?</strong> Bojler pulls out all media queries and groups them in head of your .html file.</p>
+    <p><strong>What about media queries?</strong> Bojler pulls out all media queries and groups them in <code>&lt;head&gt;</code> of your <code>.html</code> file.</p>
 </div>
+
+### Embedded CSS
+Bojler have file called `embedded.scss` that will embed SASS/CSS inside it to `<head>` of your template.
+
+You don't have to write media queries here, Bojler automatically groups and embed them from `inlined.scss` to `<head>`.
 
 ### Webserver with Live Reload
 When you [run development mode](getting-started#run-the-bojler-) Bojler starts webserver with Live Reload.
@@ -107,7 +116,7 @@ After you run development mode your email `.html` files will be served at `http:
 Reset styles are great starting point for your email template development. They fix all well known bugs in various email clients.
 
 <div class="callout callout--info">
-    <p><strong>Where I can find reset styles?</strong> If you want to read more or add new reset styles you can find them in /source/sass/generic/reset.scss.</p>
+    <p><strong>Where I can find reset styles?</strong> If you want to read more or add new reset styles you can find them in <code>/source/sass/generic/reset.scss</code>.</p>
 </div>
 
 ### Responsive
@@ -120,25 +129,25 @@ We suggest you to use this media query when building responsive emails:
 ```
 
 ### Typography
-Bojler includes simple and easily customized typography for <a href="typography#table-cells-and-headings">headings</a>, <a href="typography#table-cells-and-headings">table cells</a> and <a href="typography#lists">lists</a>.
+Bojler includes simple and easily customized typography for headings, table cells and lists.
 
-To read more about [Typography](typography) please go to it's own [section here](typography).
+To read more about [Typography](/typography) please go to it's own [section here](/typography).
 
 ### Grid system
 Bojler uses 12-column grid with a 600px container.
 On mobile devices (under 640px wide), columns become full width and stack vertically.
 
-To read more about [Grid system](grid-system) please go to it's own [section here](grid-system).
+To read more about [Grid system](/grid-system) please go to it's own [section here](/grid-system).
 
 ### Utility classes
-High-specificity, very explicit selectors and helper classes. We use them to easily manipulate with things such as [tables](utility-classes#table-related), [alignment](utility-classes#alignment) and [spacing](utility-classes#spacing).
+High-specificity, very explicit selectors and helper classes. We use them to easily manipulate with things such as alignments and images.
 
-To read more about [Utility classes](utility-classes) please go to their own [section here](utility-classes).
+To read more about [Utility classes](/utility-classes) please go to their own [section here](/utility-classes).
 
 ### Components
 Components are pre-made blocks of code which you can use to build your own email template. These components are optional and other things don’t depend on them.
 
-To read more about [Components](components) please go to their own [section here](components).
+To read more about [Components](/components) please go to their own [section here](/components).
 
 ## Directory structure
 Everything you want to know about directory structure can be found here:
@@ -152,15 +161,17 @@ bojler/
 │   │   ├── objects/ # Objects, abstractions, and design patterns.
 │   │   ├── tools/ # Site-wide mixins and functions.
 │   │   ├── utilities/ # High-specificity, very explicit selectors.
-│   │   ├── _variables.scss # All SASS variables on one place.
-│   │   └── style.scss # Main SASS file.
+│   │   ├── _variables.scss # All SASS variables in one place.
+│   │   ├── embedded.scss # Embedded CSS comes from this file.
+│   │   └── inlined.scss # Inlined CSS comes from this file.
 │   └── email.html # Main email template.
 ├── .eslintrc # ESlint configuration file.
 ├── .gitignore # Git related file which specifies intentionally untracked files to ignore.
-├── LICENSE
-├── README.md
+├── CHANGELOG.md # All notable changes to this project will be documented in this file.
+├── CONTRIBUTING.md # Contributing guide.
+├── LICENSE # Project license.
+├── README.md # Quick start guide.
 ├── gulpfile.js # Gulp configuration file.
-├── package-lock.json # Automatically generated for any operations where npm modifies either the node_modules tree, or package.json.
 └── package.json # This file contains meta data about npm modules.
 ```
 
@@ -224,7 +235,8 @@ It’s also a really great idea to try to keep your entire email as small as hum
 Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
 
 <div class="callout callout--info">
-    <p><strong>Images compress and optimization automatization?</strong> We've planned to automate this in the future. We'll update the documentation as soon as we release automatic images compress tool inside Bojler workflow.</p>
+    <p><strong>How to use images locally?</strong> We recommend you to add <code>/assets</code> directory containing your images inside <code>/public</code> directory. Bojler will not delete your <code>/assets</code> directory on build or during development mode.</p>
+	<p>Also <code>npm run gulp clean</code> command will not delete your <code>/assets</code> directory.</p>
 </div>
 
 ### Test your email properly

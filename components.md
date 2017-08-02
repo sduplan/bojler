@@ -1,17 +1,21 @@
 ---
-layout:                     default
+# Page settings
+layout: default
+keywords: email, css, html, framework, boilerplate, grid, campaigns, templates, bojler, slicejack
+comments: false
 
-title:                      Components
-description:                Components are pre-made blocks of code which you can use to build your own email template. These components are optional and other things don’t depend on them.
-keywords:                   boilerplate, grid, email css, email, email boilerplate, email campaigns, email template, bojler, slicejack
+# Hero section
+title: Components
+description: Components are pre-made blocks of code which you can use to build your own email template. These components are optional and other things don’t depend on them.
 
-page_nav:                   true
-page_nav_prev:              true
-page_nav_prev_content:      Utility classes
-page_nav_prev_url:          /utility-classes
-page_nav_next:              false
-page_nav_next_content:
-page_nav_next_url:
+# Micro navigation
+micro_nav: true
+
+# Page navigation
+page_nav:
+    prev:
+        content: Utility classes
+        url: /utility-classes
 ---
 
 <div class="callout callout--info">

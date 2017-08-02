@@ -1,17 +1,24 @@
 ---
-layout:                     default
+# Page settings
+layout: default
+keywords: email, css, html, framework, boilerplate, grid, campaigns, templates, bojler, slicejack
+comments: false
 
-title:                      Typography
-description:                Bojler includes simple and easily customized typography for headings, table cells and lists.
-keywords:                   boilerplate, grid, email css, email, email boilerplate, email campaigns, email template, bojler, slicejack
+# Hero section
+title: Typography
+description: Bojler includes simple and easily customized typography for headings, table cells and lists.
 
-page_nav:                   true
-page_nav_prev:              true
-page_nav_prev_content:      Getting started
-page_nav_prev_url:          /getting-started
-page_nav_next:              true
-page_nav_next_content:      Grid system
-page_nav_next_url:          /grid-system
+# Micro navigation
+micro_nav: true
+
+# Page navigation
+page_nav:
+    prev:
+        content: Getting started
+        url: /getting-started
+    next:
+        content: Grid system
+        url: /grid-system
 ---
 
 ## System fonts stack
