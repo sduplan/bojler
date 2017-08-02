@@ -6,9 +6,9 @@
 	<body class="{{ site.doks.color_theme }} error-404">
 		<div class="align-container">
 			<div class="align-inner">
-				<h1 class="error-404__title">{{ page.content.title }}</h1>
-				{% if page.content.message %}
-					<p>{{ page.content.message }}</p>
+				<h1 class="error-404__title">{{ page.page-content.title }}</h1>
+				{% if page.page-content.message %}
+					<p>{{ page.page-content.message }}</p>
 				{% endif %}
 				<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/" class="btn btn--dark btn--rounded btn--w-icon btn--w-icon-left">
 					<i class="icon icon--home"></i>
