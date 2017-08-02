@@ -52,7 +52,7 @@ We've prepared few button variations for you. To apply the variation just add on
 - Dark: `btn--dark`
 
 <div class="example">
-    <a href="examples/buttons.html" target="blank">Preview</a>
+    <a href="/examples/buttons.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="btn" border="0" cellpadding="0" cellspacing="0">
@@ -81,7 +81,7 @@ Everything regarding CSS and reset for this component is already implemented ins
     <p>Furthermore, your background image should have the same dimensions as your hero component, otherwise it will be broken on some Outlook email clients.</p>
 </div>
 <div class="example">
-    <a href="examples/hero.html" target="blank">Preview</a>
+    <a href="/examples/hero.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">

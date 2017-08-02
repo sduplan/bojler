@@ -29,7 +29,7 @@ Easily realign text to components with text alignment classes:
 - Center: `.align-right`
 
 <div class="example">
-    <a href="examples/utility-text-alignment.html" target="blank">Preview</a>
+    <a href="/examples/utility-text-alignment.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -56,7 +56,7 @@ This class helps you to fix centering issues for elements in Yahoo! Mail email c
 - Center: `.yahoo-center`
 
 <div class="example">
-    <a href="examples/utility-yahoo-alignment.html" target="blank">Preview</a>
+    <a href="/examples/utility-yahoo-alignment.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -81,7 +81,7 @@ Use this class only on your parent `<td>` element, not on `<img>`:
 - Reset: `.image-reset`
 
 <div class="example">
-    <a href="examples/utility-images-reset.html" target="blank">Preview</a>
+    <a href="/examples/utility-images-reset.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
