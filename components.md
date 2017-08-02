@@ -52,7 +52,7 @@ We've prepared few button variations for you. To apply the variation just add on
 - Dark: `btn--dark`
 
 <div class="example">
-    <a href="examples/example-buttons.html" target="blank">Preview</a>
+    <a href="examples/buttons.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="btn" border="0" cellpadding="0" cellspacing="0">
@@ -62,7 +62,6 @@ We've prepared few button variations for you. To apply the variation just add on
         </td>
     </tr>
 </table><!-- /.btn -->
-
 <table class="btn btn--red" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td>
@@ -82,5 +81,49 @@ Everything regarding CSS and reset for this component is already implemented ins
     <p>Furthermore, your background image should have the same dimensions as your hero component, otherwise it will be broken on some Outlook email clients.</p>
 </div>
 <div class="example">
-    <a href="examples/example-hero.html" target="blank">Preview</a>
+    <a href="examples/hero.html" target="blank">Preview</a>
 </div>
+```html
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="hero" width="600" height="350" background="https://dummyimage.com/600x350/d9f0ff/cccccc.jpg">
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; height: 350px;">
+            <v:fill type="frame" src="https://dummyimage.com/600x350/d9f0ff/cccccc.jpg" color="#ffffff" />
+            <v:textbox inset="0, 0, 0, 0">
+            <![endif]-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="hero__inner">
+                        <table width="520" align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="align-center">
+                                    <h1>Title</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="btn btn--blue yahoo-center" border="0" cellpadding="0" cellspacing="0" align="center">
+                                        <tr>
+                                            <td>
+                                                <a href="#">Click me!</a>
+                                            </td>
+                                        </tr>
+                                    </table><!-- /.btn -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td><!-- /.hero__inner -->
+                </tr>
+            </table>
+            <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+        </td><!-- /.hero -->
+    </tr>
+</table><!-- /.container -->
+```

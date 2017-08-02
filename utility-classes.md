@@ -29,13 +29,13 @@ Easily realign text to components with text alignment classes:
 - Center: `.align-right`
 
 <div class="example">
-    <a href="examples/example-utility-alignment.html" target="blank">Preview</a>
+    <a href="examples/utility-text-alignment.html" target="blank">Preview</a>
 </div>
 ```html
 <table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td class="column-12 first last">
-            <table class="table-full-width" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                     <td class="align-left">Align left</td>
                 </tr>
@@ -55,6 +55,23 @@ Easily realign text to components with text alignment classes:
 This class helps you to fix centering issues for elements in Yahoo! Mail email client:
 - Center: `.yahoo-center`
 
+<div class="example">
+    <a href="examples/utility-yahoo-alignment.html" target="blank">Preview</a>
+</div>
+```html
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="column-12 first last">
+            <table class="yahoo-center" width="300" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>This should be centered in Yahoo! Mail</td>
+                </tr>
+            </table>
+        </td><!-- /.col -->
+    </tr>
+</table><!-- /.container -->
+```
+
 ## Images
 ### Reset
 We've implemented images reset class which you can use to reset images  
@@ -62,6 +79,19 @@ We've implemented images reset class which you can use to reset images
 Use this class only on your parent `<td>` element, not on `<img>`:
 
 - Reset: `.image-reset`
+
+<div class="example">
+    <a href="examples/utility-images-reset.html" target="blank">Preview</a>
+</div>
+```html
+<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="column-12 first last image-reset">
+            <img src="example.png" />
+        </td><!-- /.col -->
+    </tr>
+</table><!-- /.container -->
+```
 
 ## Spacing
 ### Body table spacing
