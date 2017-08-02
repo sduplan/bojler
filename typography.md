@@ -97,7 +97,7 @@ Lists will not work properly in Outlook 2007/10/13 unless you wrap them with tab
 Outlook 2007/10/13 don't support padding by default on lists so we have to add it manually.
 
 <div class="example">
-    <a href="/examples/example-lists.html" target="blank">Preview</a>
+    <a href="/examples/lists.html" target="blank">Preview</a>
 </div>
 ```html
 <table border="0" cellpadding="0" cellspacing="0">
