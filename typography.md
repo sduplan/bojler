@@ -86,6 +86,11 @@ Default values are defined in `px` instead of `em` to work properly in all email
     </tbody>
 </table>
 
+<div class="callout callout--info">
+    <p><strong>Heading utility classes</strong> You can use specific heading utility classes to apply heading styles to any element you want in your email template:
+	<code>.h1</code>, <code>.h2</code>, <code>.h3</code>, <code>.h4</code>, <code>.h5</code>, <code>.h6</code>.</p>
+</div>
+
 ## Lists
 Lists will not work properly in Outlook 2007/10/13 unless you wrap them with table cell (`td`) that have class `.have-list`.
 
