@@ -56,5 +56,16 @@ This class helps you to fix centering issues for elements in Yahoo! Mail email c
 - Center: `.yahoo-center`
 
 ## Images
+### Reset
 We've implemented images reset class which you can use to reset images  
-`font-size` and `line-height` to display properly on some Outlook email clients.
+`font-size` and `line-height` to display properly on some Outlook email clients.  
+Use this class only on your parent `<td>` element, not on `<img>`:
+
+- Reset: `.image-reset`
+
+## Spacing
+### Body table spacing
+By default Bojler generates email templates with spacing around template body.
+If you want to disable this feature just remove `.body-table-spacing` utility class from your `.html` file.
+
+- Body table spacing: `.body-table-spacing`
