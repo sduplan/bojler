@@ -131,7 +131,6 @@ In `.container` you can place max. 12 columns.
 ```
 
 ## First and last classes
-
 The `.first` class adds the appropriate amount of padding-left to space the content away from the container’s edge. The `.last` class is added to your last set of columns in a row to add padding-right to the column. If you have columns in between `.first` and `.last`, these classes are not needed on the middle columns.
 
 The reason these classes exist is that CSS properties like `:last-child` don’t work in most email clients so a class is needed.
@@ -156,7 +155,6 @@ The reason these classes exist is that CSS properties like `:last-child` don’t
 ```
 
 ## Columns without gutter
-
 If you need columns without gutter than you should use `.no-gutter` class on your `.container`.
 
 <div class="example">
@@ -174,3 +172,7 @@ If you need columns without gutter than you should use `.no-gutter` class on you
     </tr>
 </table><!-- /.container -->
 ```
+
+<div class="callout callout--warning">
+    <p><strong>Don't use .first and .last classes</strong> Don't use <code>.first</code> and <code>.last</code> classes in combination with <code>.no-gutter</code> class, otherwise you'll have problem with unexpected paddings.</p>
+</div>
