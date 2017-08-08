@@ -25,7 +25,7 @@ doks:
             - network_name: github
               profile_url: https://github.com/Slicejack
     google_analytics:
-        tracking_code: UA-102016302-1
+        tracking_code: UA-7374079-1
     comments:
         disqus_forum_shortname: # Add your disqus forum shortname to activate comments
 
