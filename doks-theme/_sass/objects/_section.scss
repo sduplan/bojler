@@ -12,6 +12,10 @@
 }
 
 /* ----- Variations ----- */
+.section--theme-color-bg {
+	background-color: $color-theme-blue;
+}
+
 .section--darker-theme-color-bg {
 	background-color: darken($color-theme-blue, 3%);
 }
