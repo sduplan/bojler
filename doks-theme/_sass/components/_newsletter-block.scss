@@ -25,6 +25,7 @@
 		width: 100%;
 		height: 3.375rem;
 		border: 2px solid $color-dark-blue;
+		background-color: $color-theme-blue;
 		padding: .625rem 1.25rem;
 		transition: border .2s;
 
@@ -34,6 +35,26 @@
 
 		&:focus {
 			border-color: $color-yellow;
+		}
+
+		&::-webkit-input-placeholder {
+			color: $color-dark-blue;
+			font-style: italic;
+		}
+
+		&::-moz-placeholder {
+			color: $color-dark-blue;
+			font-style: italic;
+		}
+
+		&:-ms-input-placeholder {
+			color: $color-dark-blue;
+			font-style: italic;
+		}
+
+		&:-moz-placeholder {
+			color: $color-dark-blue;
+			font-style: italic;
 		}
 	}
 }
