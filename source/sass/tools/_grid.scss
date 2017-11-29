@@ -12,8 +12,8 @@
 @mixin grid-columns {
 	%padding-styles {
 		/* 1 */
-		padding-left: $grid-gutter;
-		padding-right: $grid-gutter;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	@for $i from 1 through $grid-columns {
@@ -33,18 +33,26 @@
 	%first-column-styles {
 		/* 3 */
 		padding-left: $grid-gutter * 2;
+		padding-top: $grid-gutter;
+		padding-bottom: $grid-gutter;
 
 		@media (max-width: $breakpoint-mobile) {
 			padding-left: $grid-gutter !important;
+			padding-top: $grid-gutter !important;
+			padding-bottom: $grid-gutter !important;
 		}
 	}
 
 	%last-column-styles {
 		/* 3 */
 		padding-right: $grid-gutter * 2;
+		padding-top: $grid-gutter;
+		padding-bottom: $grid-gutter;
 
 		@media (max-width: $breakpoint-mobile) {
 			padding-right: $grid-gutter !important;
+			padding-top: $grid-gutter !important;
+			padding-bottom: $grid-gutter !important;
 		}
 	}
 
